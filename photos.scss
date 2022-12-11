@@ -1,6 +1,6 @@
 .video {
     width: 100vw;
-    height: 40vh;
+    height: 20vh;
 }
 
 /*Zdjęcia__główna*/
@@ -12,23 +12,27 @@
 @mixin photo {
     width: 25vh;
     height: 25ch;
-    transition: 0.5s all linear;
+    border-radius: 2vw;
   }
+
   .church__info {
-    
     @include photo;
   }
   
   .church__duty {
-    
     @include photo;
   }
-  
-  
+
   .Antoni {
-    
     @include photo;
   }
+
+.village__palace {
+    @include photo;
+  }
+
+
+
   
   .Antoni__left:hover {
     transform: scale(2.2);
@@ -39,16 +43,7 @@
     grid-row: 11 / 13;
     @include photo;
   }
-  
-  .village__palace {
-    grid-column: 1 / 4;
-    grid-row: 14 / 16;
-    @include photo;
-  }
-  
-  .village__palace:hover {
-    transform: scale(2.2);
-  }
+
   
   .village__tower {
     grid-column: 9 / 11;
