@@ -2,11 +2,10 @@
 /*navigation styling */
 .navigation {
   width: 100vw;
-  height: 5vh;
+  height: 7vw;
   background: linear-gradient(-8deg, #0b8793, #ba05b1);
   border-radius: 3vw;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
   align-items: center;
@@ -32,7 +31,9 @@
 .dropdown__icon {
   color: white;
   text-decoration: none;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 3vw;
+  margin: 2vw; }
 
 .dropdown__icon:hover {
   background-color: #b2046f;
@@ -65,7 +66,7 @@
   margin: 0;
   color: white;
   text-decoration: none;
-  font-size: 15px; }
+  font-size: 2vw; }
 
 .dropdown__link:hover {
   color: yellow; }
@@ -120,54 +121,39 @@
   background-color: #050505; }
 
 /*koniec hamburgera*/
-.video {
+.div__logo {
   width: 100vw;
-  height: 20vh; }
+  height: 50vw; }
+
+.logo {
+  width: 100vw;
+  height: 50vw; }
 
 /*Zdjęcia__główna*/
 .photo {
   width: 50vw;
-  height: 50vw; }
+  height: 40vw;
+  border-radius: 2vw; }
 
 .church__info {
-  width: 25vh;
-  height: 25ch;
-  border-radius: 2vw; }
+  width: 50vw;
+  height: 40vw;
+  margin: 1vw; }
 
 .church__duty {
-  width: 25vh;
-  height: 25ch;
-  border-radius: 2vw; }
+  width: 50vw;
+  height: 40vw;
+  margin: 1vw; }
 
 .Antoni {
-  width: 25vh;
-  height: 25ch;
-  border-radius: 2vw; }
+  width: 50vw;
+  height: 40vw;
+  margin: 1vw; }
 
 .village__palace {
-  width: 25vh;
-  height: 25ch;
-  border-radius: 2vw; }
-
-.Antoni__left:hover {
-  transform: scale(2.2); }
-
-.Antoni__right {
-  grid-column: 9 / 11;
-  grid-row: 11 / 13;
-  width: 25vh;
-  height: 25ch;
-  border-radius: 2vw; }
-
-.village__tower {
-  grid-column: 9 / 11;
-  grid-row: 14 / 16;
-  width: 25vh;
-  height: 25ch;
-  border-radius: 2vw; }
-
-.village__tower:hover {
-  transform: scale(2.2); }
+  width: 50vw;
+  height: 40vw;
+  margin: 1vw; }
 
 /*Zdjęcia__Aktualności*/
 .rap {
@@ -234,7 +220,10 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 25vw);
   grid-template-rows: repeat(20, 25vw);
-  background-image: url(tło.png); }
+  background-image: url(tło.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center; }
 
 .cytat {
   grid-column: 1 / 5;
@@ -283,6 +272,9 @@ header {
   text-align: justify;
   font-family: "Amita", sans-serif;
   color: #3d0372; }
+
+li {
+  list-style: none; }
 
 .section__antoni {
   display: flex;
@@ -432,13 +424,13 @@ label {
 .paragraph {
   font-size: 2vw;
   font-family: "Amita", sans-serif;
+  text-align: center;
   color: black; }
 
 .info__paragraph {
-  text-align: center;
-  top: 1px;
   font-size: 2vw;
   font-family: "Amita", sans-serif;
+  text-align: center;
   color: black; }
 
 .info__span {

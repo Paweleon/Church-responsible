@@ -1,18 +1,25 @@
-.video {
+.div__logo {
     width: 100vw;
-    height: 20vh;
+    height: 50vw;
+}
+.logo {
+    width: 100vw;
+    height: 50vw;
 }
 
 /*Zdjęcia__główna*/
 .photo {
     width: 50vw;
-    height: 50vw;
+    height: 40vw;
+    
+    border-radius: 2vw;
 }
 
 @mixin photo {
-    width: 25vh;
-    height: 25ch;
-    border-radius: 2vw;
+    width: 50vw;
+    height: 40vw;
+    margin: 1vw;
+    
   }
 
   .church__info {
@@ -27,35 +34,10 @@
     @include photo;
   }
 
-.village__palace {
+ .village__palace {
     @include photo;
   }
 
-
-
-  
-  .Antoni__left:hover {
-    transform: scale(2.2);
-  }
-  
-  .Antoni__right {
-    grid-column: 9 / 11;
-    grid-row: 11 / 13;
-    @include photo;
-  }
-
-  
-  .village__tower {
-    grid-column: 9 / 11;
-    grid-row: 14 / 16;
-    @include photo;
-  }
-  
-  .village__tower:hover {
-    transform: scale(2.2);
-  }
-  
-  
   
   /*Zdjęcia__Aktualności*/
   

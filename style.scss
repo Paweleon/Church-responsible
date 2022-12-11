@@ -17,6 +17,9 @@ html {
   grid-template-columns: repeat(4, 25vw);
   grid-template-rows: repeat(20, 25vw);
   background-image: url(tło.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
 }
 
 .cytat {
@@ -44,6 +47,7 @@ html {
 @mixin paragraph {
   font-size: 2vw;
   font-family: $font-family;
+  text-align: center;
   color: black;
 }
 
@@ -86,8 +90,10 @@ header {
  
 }
 .section__duty {
-
   @include section;
+}
+li {
+    list-style: none;
 }
 .section__antoni {
   
@@ -182,8 +188,6 @@ label {
   @include paragraph;
 }
 .info__paragraph {
-  text-align: center;
-  top: 1px;
   @include paragraph;
 }
 .info__span {

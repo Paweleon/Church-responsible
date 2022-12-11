@@ -2,11 +2,10 @@
 
 .navigation {
     width: 100vw;
-    height: 5vh;
+    height: 7vw;
     background: linear-gradient(-8deg, #0b8793, #ba05b1);
     border-radius: 3vw;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
     align-items: center;
@@ -40,7 +39,9 @@
   .dropdown__icon {
       color:white;
       text-decoration: none;
-      letter-spacing: 1px; 
+      letter-spacing: 1px;
+      font-size: 3vw; 
+      margin: 2vw;
       
   }
   .dropdown__icon:hover {
@@ -84,7 +85,7 @@
       margin:0;
       color: white;
       text-decoration: none;
-      font-size: 15px;  
+      font-size: 2vw;  
   }
   .dropdown__link:hover {
     color:yellow;
