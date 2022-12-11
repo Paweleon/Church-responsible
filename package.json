@@ -1,0 +1,29 @@
+{
+    "name": "mobile",
+    "version": "1.0.0",
+    "description": "Kościół Pw. Św. Antoniego",
+    "main": "index.js",
+    "scripts": {
+      "sass": "npx node-sass -w style.scss style.css",
+      "cow": "cowsay szczęść Boże",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Paweleon/mobile.git"
+    },
+    "author": "Paweł Kuniec",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Paweleon/mobile/issues"
+    },
+    "homepage": "https://github.com/Paweleon/mobile#readme",
+    "dependencies": {
+      "cowsay": "^1.5.0",
+      "react": "^18.2.0"
+    },
+    "devDependencies": {
+      "sass": "^1.52.3"
+    }
+  }
+  

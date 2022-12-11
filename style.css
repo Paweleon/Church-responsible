@@ -1,0 +1,595 @@
+@charset "UTF-8";
+/*navigation styling */
+.navigation {
+  width: 100vw;
+  height: 5vh;
+  background: linear-gradient(-8deg, #0b8793, #ba05b1);
+  border-radius: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  font-family: "Amita", sans-serif;
+  list-style: none; }
+  .navigation__navigation li {
+    list-style: none; }
+  .navigation__list {
+    padding: 1vw;
+    text-align: center;
+    align-items: center;
+    transition: all 0.5s; }
+  .navigation__menu {
+    list-style: none; }
+    .navigation__menu__menu li {
+      list-style: none;
+      padding: 0 1rem;
+      text-shadow: 1px 1px 2x blue; }
+
+.navigation__dropdown {
+  position: relative; }
+
+.dropdown__icon {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px; }
+
+.dropdown__icon:hover {
+  background-color: #b2046f;
+  border-radius: 7px;
+  color: yellow; }
+
+.dropdown__item {
+  padding: 5px; }
+
+.dropdown__menu {
+  justify-content: space-around;
+  text-align: left;
+  position: absolute;
+  background: linear-gradient(-8deg, #ba05b1, #0b8793);
+  padding: 1px;
+  list-style-type: none;
+  margin: 1px;
+  border-radius: 7px;
+  display: none; }
+
+.dropdown__item:hover {
+  background-color: #b2046f;
+  border-radius: 7px; }
+
+.dropdown__link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 7px;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 15px; }
+
+.dropdown__link:hover {
+  color: yellow; }
+
+.navigation__dropdown a:focus + ul,
+.navigation__dropdown a:hover + ul,
+.navigation__dropdown ul:hover {
+  display: block; }
+
+/* hamburger*/
+.hamburger {
+  display: none; }
+
+.navigation__button {
+  display: none;
+  background-color: #3505ba;
+  right: 10px;
+  bottom: 70px;
+  border-radius: 7px; }
+
+.bar__zero {
+  width: 7px;
+  height: 3px;
+  display: block;
+  color: black;
+  padding: 1px;
+  margin: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #050505; }
+
+.bar__first {
+  width: 15px;
+  height: 3px;
+  display: block;
+  color: black;
+  padding: 1px;
+  margin: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #050505; }
+
+.bar__second {
+  width: 25px;
+  height: 3px;
+  display: block;
+  color: black;
+  padding: 1px;
+  margin: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #050505; }
+
+/*koniec hamburgera*/
+.video {
+  width: 100vw;
+  height: 40vh; }
+
+/*Zdjęcia__główna*/
+.photo {
+  width: 50vw;
+  height: 50vw; }
+
+.church__info {
+  width: 25vh;
+  height: 25ch;
+  transition: 0.5s all linear; }
+
+.church__duty {
+  width: 25vh;
+  height: 25ch;
+  transition: 0.5s all linear; }
+
+.Antoni {
+  width: 25vh;
+  height: 25ch;
+  transition: 0.5s all linear; }
+
+.Antoni__left:hover {
+  transform: scale(2.2); }
+
+.Antoni__right {
+  grid-column: 9 / 11;
+  grid-row: 11 / 13;
+  width: 25vh;
+  height: 25ch;
+  transition: 0.5s all linear; }
+
+.village__palace {
+  grid-column: 1 / 4;
+  grid-row: 14 / 16;
+  width: 25vh;
+  height: 25ch;
+  transition: 0.5s all linear; }
+
+.village__palace:hover {
+  transform: scale(2.2); }
+
+.village__tower {
+  grid-column: 9 / 11;
+  grid-row: 14 / 16;
+  width: 25vh;
+  height: 25ch;
+  transition: 0.5s all linear; }
+
+.village__tower:hover {
+  transform: scale(2.2); }
+
+/*Zdjęcia__Aktualności*/
+.rap {
+  display: inline-block;
+  margin: 1px;
+  padding: 2px;
+  border: 1px solid black; }
+
+/*Zdjęcia__historia*/
+.history__photo {
+  width: 200px;
+  background: white;
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  opacity: 0, 7;
+  border-radius: 3px;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  justify-content: space-between;
+  transition: 0.5s all linear; }
+
+.history__photo img {
+  width: 50px;
+  flex-basis: 100%; }
+
+.history__photo:hover {
+  opacity: 1;
+  position: absolute;
+  transform: scale(2.2);
+  z-index: 5; }
+
+.Nowak {
+  grid-column: 5 / 8;
+  grid-row: 8 / 12;
+  margin-left: 120px;
+  margin-top: 20px; }
+
+.Mormol {
+  grid-column: 5 / 8;
+  grid-row: 12 / 17;
+  margin-left: 120px;
+  margin-top: 20px; }
+
+.Krukowski {
+  grid-column: 5 / 8;
+  grid-row: 17 / 21;
+  margin-left: 120px;
+  margin-top: 20px; }
+
+@media (min-width: 900px) {
+  .cytat {
+    font-size: 4vw !important; } }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit; }
+
+.body {
+  display: grid;
+  grid-template-columns: repeat(4, 25vw);
+  grid-template-rows: repeat(15, 25vh);
+  background-image: url(tło.png); }
+
+.cytat {
+  grid-column: 1 / 5;
+  grid-row: 1 / 3;
+  font-size: 4vh;
+  text-align: center;
+  font-family: "Clicker Script", sans-serif;
+  color: whitesmoke; }
+
+header {
+  background-color: white;
+  grid-column: 1 / 5;
+  grid-row: 3/ 5; }
+
+.footer {
+  grid-column: 1 / 5;
+  grid-row: 14 / 16;
+  font-family: "Amita", sans-serif;
+  text-align: center;
+  background-color: white; }
+
+.main {
+  grid-column: 1 / 5;
+  grid-row: 5 / 14;
+  display: flex;
+  flex-direction: column;
+  background: #1ac9d7;
+  background: linear-gradient(0deg, rgba(26, 201, 215, 0.787553) 11%, #fffefd 83%);
+  border: 15px double #e4a804; }
+
+/*strona główna*/
+.section__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+.section__duty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+.section__antoni {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+.section__village {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+/*Aktualności*/
+.section__announcement {
+  grid-column: 4 / 9;
+  grid-row: 6 / 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+.section__information {
+  grid-column: 4 / 9;
+  grid-row: 6 / 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+.section__forum {
+  grid-column: 4 / 9;
+  grid-row: 6 / 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+label {
+  display: block; }
+
+.section__rap {
+  grid-column: 4 / 10;
+  grid-row: 6 / 12;
+  color: var(--paragraph);
+  font-family: 25px;
+  width: 620px;
+  height: 700px;
+  margin: 5px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+/*Sakramenty*/
+.section__penance {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+.section__baptism {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+.section__communion {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+.section__marriage {
+  grid-column: 4 / 9;
+  grid-row: 6 / 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+/*Historia*/
+.section__history {
+  grid-column: 4 / 9;
+  grid-row: 6 / 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+.section__priest {
+  grid-column: 4 / 9;
+  grid-row: 6 / 22;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #828385;
+  text-align: justify;
+  font-family: "Amita", sans-serif;
+  color: #3d0372; }
+
+/*Inne*/
+.sectionheader {
+  text-align: center;
+  font-size: 5vw; }
+
+.paragraph {
+  font-size: 2vw;
+  font-family: "Amita", sans-serif;
+  color: black; }
+
+.info__paragraph {
+  text-align: center;
+  top: 1px;
+  font-size: 2vw;
+  font-family: "Amita", sans-serif;
+  color: black; }
+
+.info__span {
+  font-weight: bolder; }
+
+/*Animacje*/
+.Birthday {
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 26px;
+  animation: naszaAnimacja 7s linear infinite;
+  transform-origin: 50% 50% 200px; }
+
+@keyframes naszaAnimacja {
+  0% {
+    transform: perspective(300px) rotateY(0) translateX(0); }
+  100% {
+    transform: perspective(300px) rotateY(360deg) translateX(150px); } }
+
+.top {
+  color: black;
+  text-decoration: underline;
+  font-weight: bolder;
+  position: fixed; }
+
+.gallery {
+  grid-column: 1 / 12;
+  grid-row: 13 / 18;
+  background: #000;
+  max-width: 1000px;
+  height: 535px;
+  margin: 50px auto;
+  border-radius: 10px; }
+
+.slides {
+  position: relative;
+  display: block; }
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 4s; }
+
+.slide:first-child {
+  position: relative; }
+
+.picture {
+  display: block; }
+
+.show {
+  z-index: 3;
+  opacity: 1; }
+
+.next,
+.prev {
+  color: #fff;
+  position: absolute;
+  background: #000;
+  background: rgba(0, 0, 0, 0.6);
+  top: 45%;
+  z-index: 5;
+  font-size: 40px;
+  opacity: 0.5;
+  user-select: none;
+  /*określamy, że użytkownik nie może tego zaznaczayć, ani kopiować*/ }
+
+.next:hover,
+.prev:hover,
+nav button:hover {
+  cursor: pointer;
+  opacity: 1; }
+
+.next {
+  right: 0;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+.prev {
+  left: 0;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
+
+.buttons {
+  text-align: center;
+  line-height: 25px;
+  position: relative; }
+
+nav ul > li {
+  display: inline-block;
+  list-style-type: none; }
+
+nav ul {
+  margin: 0;
+  padding: 0; }
+
+.pin {
+  background: #000;
+  color: #fff;
+  position: relative;
+  border: none;
+  outline: none; }
+
+nav ul > li button {
+  width: 15px;
+  height: 20px;
+  line-height: 25px;
+  font-size: 32px;
+  opacity: 0.7; }
+
+nav ul > li button:before {
+  content: "\2022";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+nav ul > li button.selected {
+  opacity: 1; }
+
+.play {
+  background: #000;
+  color: white;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  font-size: 15px;
+  line-height: 15px;
+  right: 0;
+  bottom: 0; }
+
+.play:before {
+  content: "\25B6";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.play.on:before {
+  content: "\23f8"; }

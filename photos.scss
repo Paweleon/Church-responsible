@@ -1,0 +1,130 @@
+.video {
+    width: 100vw;
+    height: 40vh;
+}
+
+/*Zdjęcia__główna*/
+.photo {
+    width: 50vw;
+    height: 50vw;
+}
+
+@mixin photo {
+    width: 25vh;
+    height: 25ch;
+    transition: 0.5s all linear;
+  }
+  .church__info {
+    
+    @include photo;
+  }
+  
+  .church__duty {
+    
+    @include photo;
+  }
+  
+  
+  .Antoni {
+    
+    @include photo;
+  }
+  
+  .Antoni__left:hover {
+    transform: scale(2.2);
+  }
+  
+  .Antoni__right {
+    grid-column: 9 / 11;
+    grid-row: 11 / 13;
+    @include photo;
+  }
+  
+  .village__palace {
+    grid-column: 1 / 4;
+    grid-row: 14 / 16;
+    @include photo;
+  }
+  
+  .village__palace:hover {
+    transform: scale(2.2);
+  }
+  
+  .village__tower {
+    grid-column: 9 / 11;
+    grid-row: 14 / 16;
+    @include photo;
+  }
+  
+  .village__tower:hover {
+    transform: scale(2.2);
+  }
+  
+  
+  
+  /*Zdjęcia__Aktualności*/
+  
+  .rap {
+ 
+    display: inline-block;
+    margin: 1px;
+    padding: 2px;
+    border: 1px solid black;
+   
+  }
+  
+  /*Zdjęcia__historia*/
+  
+ 
+  
+  .history__photo {
+    width: 200px;
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    opacity: 0, 7;
+    border-radius: 3px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    justify-content: space-between;
+    transition: 0.5s all linear;
+  }
+  
+  .history__photo img {
+    width: 50px;
+    flex-basis: 100%;
+  }
+  
+  .history__photo:hover {
+    opacity: 1;
+    position: absolute;
+    transform: scale(2.2);
+    z-index: 5;
+  }
+
+  .Nowak {
+    grid-column: 5 / 8;
+    grid-row: 8 / 12;
+    margin-left: 120px;
+    margin-top: 20px;
+    
+  }
+
+  .Mormol {
+    grid-column: 5 / 8;
+    grid-row: 12 / 17;
+    margin-left: 120px;
+    margin-top: 20px;
+    
+  }
+
+  .Krukowski {
+    grid-column: 5 / 8;
+    grid-row: 17 / 21;
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+
+
+
