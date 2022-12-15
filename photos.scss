@@ -83,27 +83,21 @@
     z-index: 5;
   }
 
-  .Nowak {
-    grid-column: 5 / 8;
-    grid-row: 8 / 12;
-    margin-left: 120px;
-    margin-top: 20px;
-    
+  .picture {
+    display: block;
+    width: 90vmin;
+    height: 65vmin;
   }
 
-  .Mormol {
-    grid-column: 5 / 8;
-    grid-row: 12 / 17;
-    margin-left: 120px;
-    margin-top: 20px;
-    
+  .priest {
+    width: 40vmin;
+    height: 75vmin;
+    margin: 2vmin;
   }
-
-  .Krukowski {
-    grid-column: 5 / 8;
-    grid-row: 17 / 21;
-    margin-left: 120px;
-    margin-top: 20px;
+   
+  .priest__img {
+    width: 40vmin;
+    height: 75vmin;
   }
 
 

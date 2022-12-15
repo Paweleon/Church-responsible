@@ -141,7 +141,6 @@ label {
   @include section;
   justify-content: space-around;
   width: 620px;
-  height: 700px; 
 }
 
 /*Sakramenty*/
@@ -215,13 +214,10 @@ label {
 }
 
 .gallery {
-  grid-column: 1 / 12;
-  grid-row: 13 / 18;
   background: #000;
-  max-width: 1000px;
-  height: 535px;
-  margin: 50px auto;
-  border-radius: 10px;
+  height: 75vmin;
+  margin: 5vmin;
+  border-radius: 2vw;
 }
 
 .slides {
@@ -241,10 +237,6 @@ label {
 
 .slide:first-child {
   position: relative;
-}
-
-.picture {
-  display: block;
 }
 
 .show {
@@ -274,16 +266,16 @@ nav button:hover {
 
 .next {
   right: 0;
-  padding: 10px 5px 15px 10px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  padding: 1vmin 2vmin 4vmin 3vmin;
+  border-top-left-radius: 2vmin;
+  border-bottom-left-radius: 2vmin;
 }
 
 .prev {
   left: 0;
-  padding: 10px 10px 15px 5px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  padding: 1vmin 3vmin 4vmin 2vmin;
+  border-top-right-radius: 2vmin;
+  border-bottom-right-radius: 2vmin;
 }
 
 .buttons {
@@ -311,8 +303,8 @@ nav ul {
 }
 
 nav ul > li button {
-  width: 15px;
-  height: 20px;
+  width: 2vmin;
+  height: 3vmin;
   line-height: 25px;
   font-size: 32px;
   opacity: 0.7;

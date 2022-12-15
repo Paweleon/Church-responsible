@@ -192,23 +192,19 @@
   transform: scale(2.2);
   z-index: 5; }
 
-.Nowak {
-  grid-column: 5 / 8;
-  grid-row: 8 / 12;
-  margin-left: 120px;
-  margin-top: 20px; }
+.picture {
+  display: block;
+  width: 90vmin;
+  height: 65vmin; }
 
-.Mormol {
-  grid-column: 5 / 8;
-  grid-row: 12 / 17;
-  margin-left: 120px;
-  margin-top: 20px; }
+.priest {
+  width: 40vmin;
+  height: 75vmin;
+  margin: 2vmin; }
 
-.Krukowski {
-  grid-column: 5 / 8;
-  grid-row: 17 / 21;
-  margin-left: 120px;
-  margin-top: 20px; }
+.priest__img {
+  width: 40vmin;
+  height: 75vmin; }
 
 html {
   box-sizing: border-box; }
@@ -354,8 +350,7 @@ label {
   text-align: justify;
   border-bottom: 1px solid #828385;
   justify-content: space-around;
-  width: 620px;
-  height: 700px; }
+  width: 620px; }
 
 /*Sakramenty*/
 .section__penance {
@@ -440,13 +435,10 @@ label {
   position: fixed; }
 
 .gallery {
-  grid-column: 1 / 12;
-  grid-row: 13 / 18;
   background: #000;
-  max-width: 1000px;
-  height: 535px;
-  margin: 50px auto;
-  border-radius: 10px; }
+  height: 75vmin;
+  margin: 5vmin;
+  border-radius: 2vw; }
 
 .slides {
   position: relative;
@@ -463,9 +455,6 @@ label {
 
 .slide:first-child {
   position: relative; }
-
-.picture {
-  display: block; }
 
 .show {
   z-index: 3;
@@ -492,15 +481,15 @@ nav button:hover {
 
 .next {
   right: 0;
-  padding: 10px 5px 15px 10px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  padding: 1vmin 2vmin 4vmin 3vmin;
+  border-top-left-radius: 2vmin;
+  border-bottom-left-radius: 2vmin; }
 
 .prev {
   left: 0;
-  padding: 10px 10px 15px 5px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px; }
+  padding: 1vmin 3vmin 4vmin 2vmin;
+  border-top-right-radius: 2vmin;
+  border-bottom-right-radius: 2vmin; }
 
 .buttons {
   text-align: center;
@@ -523,8 +512,8 @@ nav ul {
   outline: none; }
 
 nav ul > li button {
-  width: 15px;
-  height: 20px;
+  width: 2vmin;
+  height: 3vmin;
   line-height: 25px;
   font-size: 32px;
   opacity: 0.7; }
