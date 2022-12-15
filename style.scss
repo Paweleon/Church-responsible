@@ -10,12 +10,13 @@ html {
 *::before {
   box-sizing: inherit;
 }
-
+$font-family: "Amita", sans-serif;
 
 .body {
   display: grid;
-  grid-template-columns: repeat(4, 25vw);
-  grid-template-rows: repeat(20, 25vw);
+  grid-template-columns: repeat(4, 24vw);
+  grid-template-rows: repeat(20, 25vw); 
+  font-family: $font-family;
   background-image: url(tło.png);
   background-attachment: fixed;
   background-size: cover;
@@ -23,178 +24,155 @@ html {
 }
 
 .cytat {
-    grid-column: 1 / 5;
-    grid-row: 1 / 3;
-    font-size: 6vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    text-align: center;
-    font-family: "Clicker Script", sans-serif;
-    src: "https://fonts.googleapis.com/css?family=Amita&subset=latin,latin-ext";
-    color: whitesmoke;   
-  }
+  grid-column: 1 / 5;
+  grid-row: 1 / 3;
+  font-size: 4vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: center;
+  color: whitesmoke;
+}
 
-  $font-family: "Amita", sans-serif;
-  
+@mixin possition {
+  grid-column: 1 / 5;
+  border-radius: 3vw;
+  margin: 1vw;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background-color: white;
+}
 
 @mixin section {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-  border-top: 1px solid #828385;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: justify;
-  font-family: $font-family;
-  color: rgb(61, 3, 114);
+  border-bottom: 1px solid #828385;
 }
+
 @mixin paragraph {
-  font-size: 2vw;
-  font-family: $font-family;
   text-align: center;
+  font-size: 2vw;
   color: black;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3vw;
-    margin: 1vw;
-    background-color: white;
-    grid-column: 1 / 5;
-    grid-row: 3/ 6;
+  @include possition;
+  grid-row: 3/ 6;
+  justify-content: center;
 }
 
 .footer {
-    grid-column: 1 / 5;
-    grid-row: 23 / 24;
-    border-radius: 3vw;
-    margin: 1vw;
-    font-family: $font-family;
-    text-align: center;
-    background-color: white;
-  }
+  @include possition;
+  grid-row: 23 / 24;
+}
 
 .main {
-    grid-column: 1 / 5;
-    grid-row: 6 / 23;
-    display: flex;
-    flex-direction: column;
-    border-radius: 3vw;
-    margin: 1vw;
-    background: rgb(26, 201, 215);
-    background: linear-gradient(
-     0deg,
-      rgba(26, 201, 215, 0.7875525210084033) 11%,
-      rgba(255, 254, 253, 1) 83%
-    );
-  }
+  @include possition;
+  grid-row: 6 / 23;
+  background: rgb(26, 201, 215);
+  background: linear-gradient(
+    0deg,
+    rgba(26, 201, 215, 0.7875525210084033) 11%,
+    rgba(255, 254, 253, 1) 83%
+  )
+}
 
+.sectionheader {
+  text-align: center;
+  font-size: 5vmin;
+  color: rgb(61, 3, 114);
+}
 
+h3 {
+  text-align: center;
+  font-size: 4vmin;
+  color: rgb(61, 3, 114);
+}
 
+h4 {
+  text-align: center;
+  font-size: 3vmin;
+  color: rgb(61, 3, 114);
+}
 
+ul {
+  text-align: center;
+  padding: 0;
+}
 
+li {
+  list-style: none;
+  font-size: 3vmin;
+}
 
 /*strona główna*/
 
 .section__info {
   @include section;
- 
 }
 .section__duty {
   @include section;
 }
-li {
-    list-style: none;
-}
+
 .section__antoni {
-  
   @include section;
 }
 .section__village {
- 
   @include section;
 }
 
 /*Aktualności*/
 
 .section__announcement {
-  grid-column: 4 / 9;
-  grid-row: 6 / 12;
   @include section;
 }
 .section__information {
-  grid-column: 4 / 9;
-  grid-row: 6 / 12;
   @include section;
 }
 .section__forum {
-  grid-column: 4 / 9;
-  grid-row: 6 / 12;
   @include section;
 }
 label {
   display: block;
 }
 .section__rap {
-  grid-column: 4 / 10;
-  grid-row: 6 / 12;
-  color: var(--paragraph);
-  font-family: 25px;
-  width: 620px;
-  height: 700px;
-  margin: 5px;
-  padding: 3px;
   @include section;
+  justify-content: space-around;
+  width: 620px;
+  height: 700px; 
 }
 
 /*Sakramenty*/
 
 .section__penance {
-  grid-column: 4 / 9;
-  grid-row: 6 / 30;
   @include section;
 }
 
 .section__baptism {
-  grid-column: 4 / 9;
-  grid-row: 6 / 30;
   @include section;
 }
 
 .section__communion {
-  grid-column: 4 / 9;
-  grid-row: 6 / 30;
   @include section;
 }
 
 .section__marriage {
-  grid-column: 4 / 9;
-  grid-row: 6 / 30;
   @include section;
 }
-
 
 /*Historia*/
 
 .section__history {
-  grid-column: 4 / 9;
-  grid-row: 6 / 12;
   @include section;
 }
 
 .section__priest {
-  grid-column: 4 / 9;
-  grid-row: 6 / 22;
   @include section;
 }
 
 /*Inne*/
-
-.sectionheader {
-  text-align: center;
-  font-size: 5vw;
-}
 
 .paragraph {
   @include paragraph;
@@ -203,7 +181,7 @@ label {
   @include paragraph;
 }
 .info__span {
-    font-weight:bolder;
+  font-weight: bolder;
 }
 
 /*Animacje*/
@@ -229,16 +207,12 @@ label {
   }
 }
 
-
-
 .top {
   color: black;
   text-decoration: underline;
   font-weight: bolder;
   position: fixed;
- 
 }
-
 
 .gallery {
   grid-column: 1 / 12;
@@ -277,7 +251,6 @@ label {
   z-index: 3;
   opacity: 1;
 }
-
 
 .next,
 .prev {
@@ -359,7 +332,7 @@ nav ul > li button.selected {
 
 .play {
   background: #000;
-  color:white;
+  color: white;
   position: absolute;
   width: 30px;
   height: 20px;
@@ -380,5 +353,3 @@ nav ul > li button.selected {
 .play.on:before {
   content: "\23f8";
 }
-
-

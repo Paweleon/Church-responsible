@@ -42,14 +42,17 @@
   /*Zdjęcia__Aktualności*/
   
   .rap {
- 
+    width: 50vmin;
+    height: 40vmin;
     display: inline-block;
     margin: 1px;
     padding: 2px;
     border: 1px solid black;
-   
   }
-  
+  .rap__img {
+    width: 48vmin;
+    height: 25vmin;
+  }
   /*Zdjęcia__historia*/
   
  

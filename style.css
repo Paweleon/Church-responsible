@@ -157,10 +157,16 @@
 
 /*Zdjęcia__Aktualności*/
 .rap {
+  width: 50vmin;
+  height: 40vmin;
   display: inline-block;
   margin: 1px;
   padding: 2px;
   border: 1px solid black; }
+
+.rap__img {
+  width: 48vmin;
+  height: 25vmin; }
 
 /*Zdjęcia__historia*/
 .history__photo {
@@ -204,10 +210,6 @@
   margin-left: 120px;
   margin-top: 20px; }
 
-@media (min-width: 900px) {
-  .cytat {
-    font-size: 4vw !important; } }
-
 html {
   box-sizing: border-box; }
 
@@ -218,8 +220,9 @@ html {
 
 .body {
   display: grid;
-  grid-template-columns: repeat(4, 25vw);
+  grid-template-columns: repeat(4, 24vw);
   grid-template-rows: repeat(20, 25vw);
+  font-family: "Amita", sans-serif;
   background-image: url(tło.png);
   background-attachment: fixed;
   background-size: cover;
@@ -228,221 +231,185 @@ html {
 .cytat {
   grid-column: 1 / 5;
   grid-row: 1 / 3;
-  font-size: 6vw;
+  font-size: 4vw;
   margin-left: 1vw;
   margin-right: 1vw;
   text-align: center;
-  font-family: "Clicker Script", sans-serif;
-  src: "https://fonts.googleapis.com/css?family=Amita&subset=latin,latin-ext";
   color: whitesmoke; }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  grid-column: 1 / 5;
   border-radius: 3vw;
   margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
-  grid-column: 1 / 5;
-  grid-row: 3/ 6; }
+  grid-row: 3/ 6;
+  justify-content: center; }
 
 .footer {
   grid-column: 1 / 5;
-  grid-row: 23 / 24;
   border-radius: 3vw;
   margin: 1vw;
-  font-family: "Amita", sans-serif;
-  text-align: center;
-  background-color: white; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  grid-row: 23 / 24; }
 
 .main {
   grid-column: 1 / 5;
-  grid-row: 6 / 23;
-  display: flex;
-  flex-direction: column;
   border-radius: 3vw;
   margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  grid-row: 6 / 23;
   background: #1ac9d7;
   background: linear-gradient(0deg, rgba(26, 201, 215, 0.787553) 11%, #fffefd 83%); }
+
+.sectionheader {
+  text-align: center;
+  font-size: 5vmin;
+  color: #3d0372; }
+
+h3 {
+  text-align: center;
+  font-size: 4vmin;
+  color: #3d0372; }
+
+h4 {
+  text-align: center;
+  font-size: 3vmin;
+  color: #3d0372; }
+
+ul {
+  text-align: center;
+  padding: 0; }
+
+li {
+  list-style: none;
+  font-size: 3vmin; }
 
 /*strona główna*/
 .section__info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 .section__duty {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
-
-li {
-  list-style: none; }
+  border-bottom: 1px solid #828385; }
 
 .section__antoni {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 .section__village {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 /*Aktualności*/
 .section__announcement {
-  grid-column: 4 / 9;
-  grid-row: 6 / 12;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 .section__information {
-  grid-column: 4 / 9;
-  grid-row: 6 / 12;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 .section__forum {
-  grid-column: 4 / 9;
-  grid-row: 6 / 12;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 label {
   display: block; }
 
 .section__rap {
-  grid-column: 4 / 10;
-  grid-row: 6 / 12;
-  color: var(--paragraph);
-  font-family: 25px;
-  width: 620px;
-  height: 700px;
-  margin: 5px;
-  padding: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385;
+  justify-content: space-around;
+  width: 620px;
+  height: 700px; }
 
 /*Sakramenty*/
 .section__penance {
-  grid-column: 4 / 9;
-  grid-row: 6 / 30;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 .section__baptism {
-  grid-column: 4 / 9;
-  grid-row: 6 / 30;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 .section__communion {
-  grid-column: 4 / 9;
-  grid-row: 6 / 30;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 .section__marriage {
-  grid-column: 4 / 9;
-  grid-row: 6 / 30;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 /*Historia*/
 .section__history {
-  grid-column: 4 / 9;
-  grid-row: 6 / 12;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 .section__priest {
-  grid-column: 4 / 9;
-  grid-row: 6 / 22;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #828385;
   text-align: justify;
-  font-family: "Amita", sans-serif;
-  color: #3d0372; }
+  border-bottom: 1px solid #828385; }
 
 /*Inne*/
-.sectionheader {
-  text-align: center;
-  font-size: 5vw; }
-
 .paragraph {
-  font-size: 2vw;
-  font-family: "Amita", sans-serif;
   text-align: center;
+  font-size: 2vw;
   color: black; }
 
 .info__paragraph {
-  font-size: 2vw;
-  font-family: "Amita", sans-serif;
   text-align: center;
+  font-size: 2vw;
   color: black; }
 
 .info__span {
