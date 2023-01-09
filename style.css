@@ -192,6 +192,12 @@
   transform: scale(2.2);
   z-index: 5; }
 
+.gallery {
+  background: #000;
+  height: 75vmin;
+  margin: 2vmin;
+  border-radius: 2vw; }
+
 .picture {
   display: block;
   width: 90vmin;
@@ -433,12 +439,6 @@ label {
   text-decoration: underline;
   font-weight: bolder;
   position: fixed; }
-
-.gallery {
-  background: #000;
-  height: 75vmin;
-  margin: 5vmin;
-  border-radius: 2vw; }
 
 .slides {
   position: relative;
