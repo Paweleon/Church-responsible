@@ -1,10 +1,10 @@
 /*navigation styling */
 
 .navigation {
-    width: 90vw;
-    height: 7vw;
+    width: 40rem;
+    height: 3rem;
     background: linear-gradient(-8deg, #0b8793, #ba05b1);
-    border-radius: 3vw;
+    border-radius: 2rem;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -15,7 +15,7 @@
       list-style: none;
     }
     &__list {
-      padding: 1vw;
+      padding: 0.5rem;
       text-align: center;
       align-items: center;
       transition: all 0.5s;
@@ -39,9 +39,9 @@
   .dropdown__icon {
       color:white;
       text-decoration: none;
-      letter-spacing: 1px;
-      font-size: 3vw; 
-      margin: 2vw;
+      letter-spacing: 0.05rem;
+      font-size: 1.5rem; 
+      margin: 0.5rem;
       
   }
   .dropdown__icon:hover {
@@ -85,7 +85,7 @@
       margin:0;
       color: white;
       text-decoration: none;
-      font-size: 2vw;  
+      font-size: 1rem;  
   }
   .dropdown__link:hover {
     color:yellow;

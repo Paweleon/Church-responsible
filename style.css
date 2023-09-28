@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*navigation styling */
 .navigation {
-  width: 90vw;
-  height: 7vw;
+  width: 40rem;
+  height: 3rem;
   background: linear-gradient(-8deg, #0b8793, #ba05b1);
-  border-radius: 3vw;
+  border-radius: 2rem;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -14,7 +14,7 @@
   .navigation__navigation li {
     list-style: none; }
   .navigation__list {
-    padding: 1vw;
+    padding: 0.5rem;
     text-align: center;
     align-items: center;
     transition: all 0.5s; }
@@ -31,9 +31,9 @@
 .dropdown__icon {
   color: white;
   text-decoration: none;
-  letter-spacing: 1px;
-  font-size: 3vw;
-  margin: 2vw; }
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  margin: 0.5rem; }
 
 .dropdown__icon:hover {
   background-color: #b2046f;
@@ -66,7 +66,7 @@
   margin: 0;
   color: white;
   text-decoration: none;
-  font-size: 2vw; }
+  font-size: 1rem; }
 
 .dropdown__link:hover {
   color: yellow; }
@@ -122,95 +122,75 @@
 
 /*koniec hamburgera*/
 .div__logo {
-  width: 90vw;
-  height: 50vw; }
+  width: 32rem;
+  height: 19rem;
+  margin: 1rem; }
 
 .logo {
-  width: 90vw;
-  height: 50vw; }
+  width: 30rem;
+  height: 15rem; }
 
 /*Zdjęcia__główna*/
 .photo {
-  width: 50vw;
-  height: 40vw;
-  border-radius: 2vw; }
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem; }
 
 .church__info {
-  width: 50vw;
-  height: 40vw;
-  margin: 1vw; }
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem; }
 
 .church__duty {
-  width: 50vw;
-  height: 40vw;
-  margin: 1vw; }
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem; }
 
 .Antoni {
-  width: 50vw;
-  height: 40vw;
-  margin: 1vw; }
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem; }
 
 .village__palace {
-  width: 50vw;
-  height: 40vw;
-  margin: 1vw; }
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem; }
 
 /*Zdjęcia__Aktualności*/
 .rap {
-  width: 50vmin;
-  height: 40vmin;
+  width: 20rem;
+  height: 13rem;
   display: inline-block;
-  margin: 1px;
-  padding: 2px;
-  border: 1px solid black; }
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 0.02rem solid black; }
 
 .rap__img {
-  width: 48vmin;
-  height: 25vmin; }
+  width: 17rem;
+  height: 8rem;
+  margin: 1rem;
+  text-align: center; }
 
 /*Zdjęcia__historia*/
-.history__photo {
-  width: 200px;
-  background: white;
-  padding: 10px;
-  display: flex;
-  flex-wrap: nowrap;
-  opacity: 0, 7;
-  border-radius: 3px;
-  border: 1px solid silver;
-  box-sizing: border-box;
-  justify-content: space-between;
-  transition: 0.5s all linear; }
-
-.history__photo img {
-  width: 50px;
-  flex-basis: 100%; }
-
-.history__photo:hover {
-  opacity: 1;
-  position: absolute;
-  transform: scale(2.2);
-  z-index: 5; }
-
 .gallery {
   background: #000;
-  height: 75vmin;
-  margin: 2vmin;
-  border-radius: 2vw; }
+  height: 23rem;
+  margin: 1rem;
+  border-radius: 1rem; }
 
 .picture {
   display: block;
-  width: 90vmin;
-  height: 65vmin; }
+  width: 30rem;
+  height: 20rem; }
 
 .priest {
-  width: 40vmin;
-  height: 75vmin;
-  margin: 2vmin; }
+  width: 13rem;
+  height: 25rem;
+  margin: 1rem; }
 
 .priest__img {
-  width: 40vmin;
-  height: 75vmin; }
+  width: 13rem;
+  height: 25rem; }
 
 html {
   box-sizing: border-box; }
@@ -218,12 +198,13 @@ html {
 *,
 *:after,
 *::before {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  font-size: 2vw; }
 
 .body {
   display: grid;
   grid-template-columns: repeat(4, 24vw);
-  grid-template-rows: repeat(20, 25vw);
+  grid-template-rows: repeat(16, 25vw);
   font-family: "Amita", sans-serif;
   background-image: url(tło.png);
   background-attachment: fixed;
@@ -232,68 +213,75 @@ html {
 
 .cytat {
   grid-column: 1 / 5;
-  grid-row: 1 / 3;
-  font-size: 4vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  grid-row: 1 / 2;
+  font-size: 1.5rem;
+  margin: 1rem;
   text-align: center;
   color: whitesmoke; }
 
 header {
   grid-column: 1 / 5;
-  border-radius: 3vw;
-  margin: 1vw;
+  border-radius: 2rem;
+  margin: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
-  grid-row: 3/ 6;
+  grid-row: 2 / 5;
   justify-content: center; }
 
 .footer {
   grid-column: 1 / 5;
-  border-radius: 3vw;
-  margin: 1vw;
+  border-radius: 2rem;
+  margin: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
-  grid-row: 23 / 24; }
+  grid-row: 15 / 16; }
 
 .main {
   grid-column: 1 / 5;
-  border-radius: 3vw;
-  margin: 1vw;
+  border-radius: 2rem;
+  margin: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
-  grid-row: 6 / 23;
+  grid-row: 5 / 15;
   background: #1ac9d7;
   background: linear-gradient(0deg, rgba(26, 201, 215, 0.787553) 11%, #fffefd 83%); }
 
 .sectionheader {
   text-align: center;
-  font-size: 5vmin;
+  font-size: 1.5rem;
+  margin: 1rem;
   color: #3d0372; }
 
 h3 {
   text-align: center;
-  font-size: 4vmin;
+  font-size: 1.3rem;
   color: #3d0372; }
 
 h4 {
   text-align: center;
-  font-size: 3vmin;
+  font-size: 1.1rem;
   color: #3d0372; }
 
 ul {
   text-align: center;
-  padding: 0; }
+  padding: 0;
+  margin: 0.8rem; }
 
 li {
   list-style: none;
-  font-size: 3vmin; }
+  font-size: 0.8rem; }
+
+.paragraph {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 1rem;
+  color: black; }
 
 /*strona główna*/
 .section__info {
@@ -301,28 +289,28 @@ li {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 .section__duty {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 .section__antoni {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 .section__village {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 /*Aktualności*/
 .section__announcement {
@@ -330,21 +318,21 @@ li {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 .section__information {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 .section__forum {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 label {
   display: block; }
@@ -354,7 +342,7 @@ label {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385;
+  border-bottom: 0.02rem solid #828385;
   justify-content: space-around;
   width: 620px; }
 
@@ -364,28 +352,28 @@ label {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 .section__baptism {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 .section__communion {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 .section__marriage {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 /*Historia*/
 .section__history {
@@ -393,24 +381,26 @@ label {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 .section__priest {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid #828385; }
+  border-bottom: 0.02rem solid #828385; }
 
 /*Inne*/
 .paragraph {
   text-align: center;
-  font-size: 2vw;
+  font-size: 0.8rem;
+  margin: 1rem;
   color: black; }
 
 .info__paragraph {
   text-align: center;
-  font-size: 2vw;
+  font-size: 0.8rem;
+  margin: 1rem;
   color: black; }
 
 .info__span {
@@ -468,7 +458,7 @@ label {
   background: rgba(0, 0, 0, 0.6);
   top: 45%;
   z-index: 5;
-  font-size: 40px;
+  font-size: 3rem;
   opacity: 0.5;
   user-select: none;
   /*określamy, że użytkownik nie może tego zaznaczayć, ani kopiować*/ }
@@ -481,19 +471,20 @@ nav button:hover {
 
 .next {
   right: 0;
-  padding: 1vmin 2vmin 4vmin 3vmin;
-  border-top-left-radius: 2vmin;
-  border-bottom-left-radius: 2vmin; }
+  padding: 0.5rem 1rem 1rem 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  margin-bottom: 4rem; }
 
 .prev {
   left: 0;
-  padding: 1vmin 3vmin 4vmin 2vmin;
-  border-top-right-radius: 2vmin;
-  border-bottom-right-radius: 2vmin; }
+  padding: 0.5rem 1rem 1rem 1rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem; }
 
 .buttons {
   text-align: center;
-  line-height: 25px;
+  line-height: 3rem;
   position: relative; }
 
 nav ul > li {
@@ -512,10 +503,10 @@ nav ul {
   outline: none; }
 
 nav ul > li button {
-  width: 2vmin;
-  height: 3vmin;
-  line-height: 25px;
-  font-size: 32px;
+  width: 1rem;
+  height: 2rem;
+  line-height: 1.5rem;
+  font-size: 3rem;
   opacity: 0.7; }
 
 nav ul > li button:before {
@@ -532,12 +523,12 @@ nav ul > li button.selected {
   background: #000;
   color: white;
   position: absolute;
-  width: 30px;
-  height: 20px;
-  font-size: 15px;
-  line-height: 15px;
-  right: 0;
-  bottom: 0; }
+  width: 3rem;
+  height: 2rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  right: 1rem;
+  bottom: 0.8rem; }
 
 .play:before {
   content: "\25B6";
