@@ -196,6 +196,7 @@ header {
   align-items: center;
   background-color: white;
   grid-row: 12 / 43;
+  overflow: auto;
   background: #1ac9d7;
   background: linear-gradient(0deg, rgba(26, 201, 215, 0.787553) 11%, #fffefd 83%); }
 
@@ -506,4 +507,8 @@ nav ul > li button.selected {
   .sectionheader {
     font-size: 2.2rem; }
   h2 {
-    font-size: 2.1rem; } }
+    font-size: 2.1rem; }
+  h3 {
+    font-size: 2rem; }
+  h4 {
+    font-size: 2rem; } }

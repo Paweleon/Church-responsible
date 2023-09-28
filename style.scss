@@ -67,6 +67,7 @@ header {
 .main {
   @include possition;
   grid-row: 12 / 43;
+  overflow: auto;
   background: rgb(26, 201, 215);
   background: linear-gradient(
     0deg,
@@ -362,5 +363,12 @@ nav ul > li button.selected {
   }
   h2 {
     font-size: 2.1rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
   }
 }
