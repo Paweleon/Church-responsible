@@ -347,3 +347,9 @@ nav ul > li button.selected {
 .play.on:before {
   content: "\23f8";
 }
+
+@media (max-width: 600px) {
+  html{
+    font-size: 1.5vh;
+  }
+}
