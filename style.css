@@ -23,7 +23,7 @@
     .navigation__menu__menu li {
       list-style: none;
       padding: 0 1rem;
-      text-shadow: 1px 1px 2x blue; }
+      text-shadow: 0.01rem 0.01rem 0.02rem blue; }
 
 .navigation__dropdown {
   position: relative; }
@@ -37,98 +37,55 @@
 
 .dropdown__icon:hover {
   background-color: #b2046f;
-  border-radius: 7px;
+  border-radius: 1rem;
   color: yellow; }
 
 .dropdown__item {
-  padding: 5px; }
+  padding: 0.5rem; }
 
 .dropdown__menu {
   justify-content: space-around;
   text-align: left;
   position: absolute;
   background: linear-gradient(-8deg, #ba05b1, #0b8793);
-  padding: 1px;
+  padding: 0.1rem;
   list-style-type: none;
-  margin: 1px;
-  border-radius: 7px;
+  margin: 0.05rem;
+  border-radius: 1rem;
   display: none; }
 
 .dropdown__item:hover {
   background-color: #b2046f;
-  border-radius: 7px; }
+  width: 100%;
+  border-radius: 1rem; }
 
 .dropdown__link {
   width: 100%;
   height: 100%;
   display: inline-block;
-  padding: 7px;
+  padding: 0.2rem;
   margin: 0;
   color: white;
   text-decoration: none;
   font-size: 1rem; }
 
 .dropdown__link:hover {
-  color: yellow; }
+  color: yellow;
+  background: 100%; }
 
 .navigation__dropdown a:focus + ul,
 .navigation__dropdown a:hover + ul,
 .navigation__dropdown ul:hover {
   display: block; }
 
-/* hamburger*/
-.hamburger {
-  display: none; }
-
-.navigation__button {
-  display: none;
-  background-color: #3505ba;
-  right: 10px;
-  bottom: 70px;
-  border-radius: 7px; }
-
-.bar__zero {
-  width: 7px;
-  height: 3px;
-  display: block;
-  color: black;
-  padding: 1px;
-  margin: 6px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #050505; }
-
-.bar__first {
-  width: 15px;
-  height: 3px;
-  display: block;
-  color: black;
-  padding: 1px;
-  margin: 6px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #050505; }
-
-.bar__second {
-  width: 25px;
-  height: 3px;
-  display: block;
-  color: black;
-  padding: 1px;
-  margin: 6px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #050505; }
-
-/*koniec hamburgera*/
 .div__logo {
   width: 32rem;
   height: 19rem;
   margin: 1rem; }
 
 .logo {
-  width: 30rem;
-  height: 15rem; }
+  width: 34rem;
+  height: 18rem; }
 
 /*Zdjęcia__główna*/
 .photo {
@@ -174,14 +131,14 @@
 /*Zdjęcia__historia*/
 .gallery {
   background: #000;
-  height: 23rem;
+  height: 34rem;
   margin: 1rem;
   border-radius: 1rem; }
 
 .picture {
   display: block;
-  width: 30rem;
-  height: 20rem; }
+  width: 40rem;
+  height: 30rem; }
 
 .priest {
   width: 13rem;
@@ -199,12 +156,12 @@ html {
 *:after,
 *::before {
   box-sizing: inherit;
-  font-size: 2vw; }
+  font-size: 1.5vw; }
 
 .body {
   display: grid;
-  grid-template-columns: repeat(4, 24vw);
-  grid-template-rows: repeat(16, 25vw);
+  grid-template-columns: repeat(4, 16.25rem);
+  grid-template-rows: repeat(45, 4rem);
   font-family: "Amita", sans-serif;
   background-image: url(tło.png);
   background-attachment: fixed;
@@ -213,7 +170,7 @@ html {
 
 .cytat {
   grid-column: 1 / 5;
-  grid-row: 1 / 2;
+  grid-row: 1 / 4;
   font-size: 1.5rem;
   margin: 1rem;
   text-align: center;
@@ -227,18 +184,8 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  grid-row: 2 / 5;
+  grid-row: 4 / 12;
   justify-content: center; }
-
-.footer {
-  grid-column: 1 / 5;
-  border-radius: 2rem;
-  margin: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  grid-row: 15 / 16; }
 
 .main {
   grid-column: 1 / 5;
@@ -248,9 +195,20 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  grid-row: 5 / 15;
+  grid-row: 12 / 43;
   background: #1ac9d7;
   background: linear-gradient(0deg, rgba(26, 201, 215, 0.787553) 11%, #fffefd 83%); }
+
+.footer {
+  grid-column: 1 / 5;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  grid-row: 43 / 45;
+  justify-content: space-around; }
 
 .sectionheader {
   text-align: center;
