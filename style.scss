@@ -16,7 +16,7 @@ $font-family: "Amita", sans-serif;
 .body {
   display: grid;
   grid-template-columns: repeat(4, 16.25rem);
-  grid-template-rows: repeat(45, 4rem); 
+  grid-template-rows: repeat(57, 4rem); 
   font-family: $font-family;
   background-image: url(tło.png);
   background-attachment: fixed;
@@ -44,6 +44,7 @@ $font-family: "Amita", sans-serif;
 }
 
 @mixin section {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +67,7 @@ header {
 
 .main {
   @include possition;
-  grid-row: 12 / 43;
+  grid-row: 12 / 54;
   overflow: auto;
   background: rgb(26, 201, 215);
   background: linear-gradient(
@@ -78,7 +79,7 @@ header {
 
 .footer {
   @include possition;
-  grid-row: 43 / 45;
+  grid-row: 54 / 56;
   justify-content: space-around;
 }
 
@@ -251,7 +252,7 @@ label {
   color: #fff;
   position: absolute;
   background: #000;
-  background: rgba(0, 0, 0, 0.6);
+  background: black;
   top: 45%;
   z-index: 5;
   font-size: 3rem;
@@ -267,18 +268,20 @@ nav button:hover {
 }
 
 .next {
-  right: 0;
-  padding: 0.5rem 1rem 1rem 1rem;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  top:8rem;
+  right: -5.2rem;
+  padding: 5rem 2rem 6rem 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
   margin-bottom: 4rem;
 }
 
 .prev {
-  left: 0;
-  padding: 0.5rem 1rem 1rem 1rem;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  top:8rem;
+  left: -5.2rem;
+  padding: 5rem 2rem 6rem 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
 .buttons {
@@ -326,23 +329,23 @@ nav ul > li button.selected {
 }
 
 .play {
-  background: #000;
-  color: white;
+  background: white;
+  color: black;
   position: absolute;
-  width: 3rem;
-  height: 2rem;
+  width: 4rem;
+  height: 3rem;
   font-size: 1rem;
   line-height: 1.7rem;
   right: 1rem;
-  bottom: 0.8rem;
+  bottom: -0.3rem;
 }
 
 .play:before {
   content: "\25B6";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 3rem;
 }
 
 .play.on:before {

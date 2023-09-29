@@ -11,14 +11,14 @@
 
 /*Zdjęcia__główna*/
 .photo {
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 1rem;
 }
 
 @mixin photo {
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
     margin: 1rem;
   }
 

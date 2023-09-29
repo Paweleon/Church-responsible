@@ -89,28 +89,28 @@
 
 /*Zdjęcia__główna*/
 .photo {
-  width: 10rem;
-  height: 10rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 1rem; }
 
 .church__info {
-  width: 10rem;
-  height: 10rem;
+  width: 20rem;
+  height: 20rem;
   margin: 1rem; }
 
 .church__duty {
-  width: 10rem;
-  height: 10rem;
+  width: 20rem;
+  height: 20rem;
   margin: 1rem; }
 
 .Antoni {
-  width: 10rem;
-  height: 10rem;
+  width: 20rem;
+  height: 20rem;
   margin: 1rem; }
 
 .village__palace {
-  width: 10rem;
-  height: 10rem;
+  width: 20rem;
+  height: 20rem;
   margin: 1rem; }
 
 /*Zdjęcia__Aktualności*/
@@ -161,7 +161,7 @@ html {
 .body {
   display: grid;
   grid-template-columns: repeat(4, 16.25rem);
-  grid-template-rows: repeat(45, 4rem);
+  grid-template-rows: repeat(57, 4rem);
   font-family: "Amita", sans-serif;
   background-image: url(tło.png);
   background-attachment: fixed;
@@ -195,7 +195,7 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  grid-row: 12 / 43;
+  grid-row: 12 / 54;
   overflow: auto;
   background: #1ac9d7;
   background: linear-gradient(0deg, rgba(26, 201, 215, 0.787553) 11%, #fffefd 83%); }
@@ -208,7 +208,7 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  grid-row: 43 / 45;
+  grid-row: 54 / 56;
   justify-content: space-around; }
 
 .sectionheader {
@@ -244,6 +244,7 @@ li {
 
 /*strona główna*/
 .section__info {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,6 +252,7 @@ li {
   border-bottom: 0.02rem solid #828385; }
 
 .section__duty {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,6 +260,7 @@ li {
   border-bottom: 0.02rem solid #828385; }
 
 .section__antoni {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,6 +268,7 @@ li {
   border-bottom: 0.02rem solid #828385; }
 
 .section__village {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -273,6 +277,7 @@ li {
 
 /*Aktualności*/
 .section__announcement {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,6 +285,7 @@ li {
   border-bottom: 0.02rem solid #828385; }
 
 .section__information {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -287,6 +293,7 @@ li {
   border-bottom: 0.02rem solid #828385; }
 
 .section__forum {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,6 +304,7 @@ label {
   display: block; }
 
 .section__rap {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,6 +315,7 @@ label {
 
 /*Sakramenty*/
 .section__penance {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,6 +323,7 @@ label {
   border-bottom: 0.02rem solid #828385; }
 
 .section__baptism {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -321,6 +331,7 @@ label {
   border-bottom: 0.02rem solid #828385; }
 
 .section__communion {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -328,6 +339,7 @@ label {
   border-bottom: 0.02rem solid #828385; }
 
 .section__marriage {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,6 +348,7 @@ label {
 
 /*Historia*/
 .section__history {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,6 +356,7 @@ label {
   border-bottom: 0.02rem solid #828385; }
 
 .section__priest {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -414,7 +428,7 @@ label {
   color: #fff;
   position: absolute;
   background: #000;
-  background: rgba(0, 0, 0, 0.6);
+  background: black;
   top: 45%;
   z-index: 5;
   font-size: 3rem;
@@ -429,17 +443,19 @@ nav button:hover {
   opacity: 1; }
 
 .next {
-  right: 0;
-  padding: 0.5rem 1rem 1rem 1rem;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  top: 8rem;
+  right: -5.2rem;
+  padding: 5rem 2rem 6rem 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
   margin-bottom: 4rem; }
 
 .prev {
-  left: 0;
-  padding: 0.5rem 1rem 1rem 1rem;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem; }
+  top: 8rem;
+  left: -5.2rem;
+  padding: 5rem 2rem 6rem 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem; }
 
 .buttons {
   text-align: center;
@@ -479,22 +495,22 @@ nav ul > li button.selected {
   opacity: 1; }
 
 .play {
-  background: #000;
-  color: white;
+  background: white;
+  color: black;
   position: absolute;
-  width: 3rem;
-  height: 2rem;
+  width: 4rem;
+  height: 3rem;
   font-size: 1rem;
   line-height: 1.7rem;
   right: 1rem;
-  bottom: 0.8rem; }
+  bottom: -0.3rem; }
 
 .play:before {
   content: "\25B6";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; }
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 3rem; }
 
 .play.on:before {
   content: "\23f8"; }
